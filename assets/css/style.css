@@ -4,14 +4,35 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 
 }
-.nav {
+
+.header {
     background: linear-gradient(to right, #febddc, #a7006f);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
 }
+
 h1 {
+    display: flex;
     color: white;
     margin: 0;
+}
+
+.searchBtn {
+    background-color: #febddc;
+    color: white;
+}
+
+aside.div {
+    border-bottom: black 1px;
+    width: 15%;
+    height: auto;
+    display: flex;
+    flex: wrap;
+    margin:0;
+}
+
+::placeholder {
+    color: gray;
 }
