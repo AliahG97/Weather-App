@@ -36,3 +36,8 @@ aside.div {
 ::placeholder {
     color: gray;
 }
+main {
+    display:flex;
+    justify-content:center;
+    align-items:center
+}
