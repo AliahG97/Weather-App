@@ -22,22 +22,54 @@ h1 {
 .searchBtn {
     background-color: #febddc;
     color: white;
+    height:40px;
+    width:70px;
 }
 
 aside.div {
-    border-bottom: black 1px;
-    width: 15%;
-    height: auto;
-    display: flex;
-    flex: wrap;
+    display:flex;
     margin:0;
-}
+    
+} 
 
+input {
+   
+    color: black;
+    height:40px;
+    width:70px;
+}
 ::placeholder {
     color: gray;
+    background-color: white;
+    height:20px;
 }
+
 main {
     display:flex;
     justify-content:center;
-    align-items:center
+    align-items:center;
+    box-sizing: border-box;
+    border-color: black;
+    border:2px solid black;
+    padding:10px;
+    margin:10px;
+    height:30vh;
+    width: 500vw;
+}
+aside {
+    box-sizing: border-box;
+    border-color: black;
+    border:2px solid black;
+    padding:10px;
+    margin:10px;
+    display:flex;
+    height:300vh;
+    width:15%;
+    margin-top:10px;
+
+}
+.displayContainer {
+    display:flex;
+    flex-direction: row;
+
 }
