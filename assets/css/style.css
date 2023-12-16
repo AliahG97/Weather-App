@@ -23,7 +23,12 @@ h1 {
     background-color: #febddc;
     color: white;
     height:40px;
-    width:70px;
+    width:13.5vw;
+    margin:30px;
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+
 }
 
 aside.div {
@@ -36,18 +41,18 @@ input {
    
     color: black;
     height:40px;
-    width:70px;
+    width:13vw;
 }
 ::placeholder {
     color: gray;
     background-color: white;
     height:20px;
+    width:30vw;
+
 }
 
 main {
     display:flex;
-    justify-content:center;
-    align-items:center;
     box-sizing: border-box;
     border-color: black;
     border:2px solid black;
@@ -57,19 +62,40 @@ main {
     width: 500vw;
 }
 aside {
-    box-sizing: border-box;
-    border-color: black;
-    border:2px solid black;
     padding:10px;
     margin:10px;
     display:flex;
-    height:300vh;
-    width:15%;
+    flex-direction: column;
+    height:93vh;
+    width:15vw;
     margin-top:10px;
+  
 
 }
 .displayContainer {
     display:flex;
     flex-direction: row;
-
+}
+.history {
+    box-sizing: border-box;
+    border-color: black;
+    border-top:2px solid black;
+    padding:20px;
+    display:flex;
+    flex-direction: column; 
+    justify-content:center;
+    align-items:center;
+    width:13.5vw;
+    padding-bottom:0;
+}
+.cityHistoryBtn {
+    background-color: #febddc; 
+    color: white;
+    height:40px;
+    width:13.5vw;
+    padding:0px;
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
 }
