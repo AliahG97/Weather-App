@@ -4,13 +4,18 @@ var apiKey = '9d4f7891d210f1159950e1f367f4e01d';
 //Function to update current weather display.
 function updateCurrentWeather(city, temperature, conditions) {
     var currentTempElement = document.getElementById('currentTempId');
-    currentTempElement.innerHTML = `City: ${city}<br>Temperature: ${temperature}°C<br>Conditions: ${conditions}`;
+
+    var currentDate = new Date().toLocaleDateString('en-US',{ month: '2-digit', day: '2-digit', year:'numeric'});
+    
+    currentDate.innerHTML = 
+    currentTempElement.innerHTML = `<h2>${city} - ${currentDate}</h2><p>Temperature:${temperature}°C<br>Conditions: ${conditions}</p>`;
+        
 }
 
     //Function to handle city history button click.
 function addCityToHistory(city) {
     var historyElement = document.getElementById('historyId');
-    historyElement.innerHTML += `<div>${city}</div>`;
+    historyElement.innerHTML += `<button>${city}</button>`;
 }
  //Event listener for search button
 document.getElementById('searchButtonId').addEventListener('click', function() {
@@ -38,3 +43,4 @@ document.getElementById('searchButtonId').addEventListener('click', function() {
         console.error('Error Fetching Data:', error);
     });
 });
+
