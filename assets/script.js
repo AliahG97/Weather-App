@@ -32,7 +32,7 @@ document.getElementById('searchButtonId').addEventListener('click', function() {
         updateCurrentWeather(cityInput, temperature, conditions);
 
         //Add to city history
-        addToCityHistory(cityInput);
+        addCityToHistory(cityInput);
     }}) 
     .catch(error => {
         console.error('Error Fetching Data:', error);
