@@ -97,12 +97,37 @@ function getWeatherEmoji(conditions) {
         return '';//No matching emoji for other conditions
     }
 }
+// Function to fetch  weather for a specific city when history button is clicked
+function getWeatherForCity(city) {
+    var apiUrlCurrent = 'https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric';
+
+    fetch(apiCurrent)
+        .then(response => response.json())
+        .then(data => {
+            if (data.main && data.weather.length > 0) {
+                var temperature = data.main.temp;
+                var conditions =  data.weather[0].description;
+
+                // Update current weather display
+                updateCurrentWeather(city, temperature, conditions);
+
+                // Get 5-day forecast for the city name
+                getWeatherForecast(city);
+            }
+        })
+        .catch(error => {
+            console.error('Error Fetching Data:', error);
+        });
+    }
+    // render history buttons on page load
+    renderHistoryButtons();
+
  //Event listener for search button
 document.getElementById('searchButtonId').addEventListener('click', function() {
     var cityInput = document.getElementById('citySearchInput').value;
 
     //Api Call to get weather data    
-    var apiUrl = 
+    var apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=${apiKey}&units=metric`;
     
     //use fetch to make the API Call
     fetch(apiUrl)
