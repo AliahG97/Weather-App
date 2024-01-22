@@ -59,7 +59,7 @@ main {
     border:2px solid black;
     padding:10px;
     margin:10px;
-    height:30vh;
+    height:25vh;
     width: 500vw;
 }
 aside {
@@ -100,7 +100,28 @@ button {
     align-items: center;
     margin-top:20px;
 }
-
+#forecastId {
+    display:flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    border-color: transparent;
+    border:2px solid transparent;
+    padding:10px;
+    margin:10px;
+    height:30vh;
+    width: 500vw; 
+    margin-inline-start: 17vw;  
+}
+h2 {
+    padding: 10px;
+    display:flex;
+    flex:wrap;
+}
+p {
+    padding:5px;
+    display:flex;
+    flex:wrap;
+}
     
 
 
