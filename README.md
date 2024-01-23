@@ -17,7 +17,7 @@ For travelers starting a new adventure, Weather Wiz a must-have travel essential
 To install this project git clone https://github.com/AliahG97/weather-wiz.git
 
 ## Screenshot
-![Weather Wiz Screenshot](./assets/Images/WeatherWizScreenshot.gif)
+![Weather Wiz Screenshot](./assets/Images/WeatherWizScreenshot.gif) https://aliahg97.github.io/Weather-App/
 
 ## Features
 
